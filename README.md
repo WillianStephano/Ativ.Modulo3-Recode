@@ -1,5 +1,5 @@
 <h1 align="center">
-  <br>Atividade Modulo 2 - RecodePro
+  <br>Atividade Modulo 3 - RecodePro
 </h1>
 
 <p align="center">
