@@ -1,0 +1,272 @@
+body{
+   background-color: #f8f8f8f8;
+}
+
+/* ##################### Home ##################### */
+.fit-cover {
+   object-fit: cover;
+}
+
+.logo img{
+   width: 38px;
+}
+
+.img_intro{
+   background: linear-gradient(144deg, rgba(126,126,126,0.8883928571428571) 0%, rgba(0,0,0,0.90) 100%),
+   url(../img/airplaneBg.jpg) center / cover;height: 600px;
+}
+
+.secao_intro .container{
+   max-width: initial;
+   padding: 0;
+}
+
+.titulo_intro, .txt_intro{
+   color: #ffffff;
+   letter-spacing: 0.2rem;
+}
+
+
+/* ##################### Barra de Pesquisa ##################### */
+.pesquisa form{
+   display: flex;
+   justify-content: center;
+   margin-top: 3%;
+}
+
+.campo_pesquisa{
+   width: 50%;
+   padding: 0.5%;
+   border-radius: 5px 0px 0px 5px;
+   border: 1px solid #a6a6a6;
+}
+
+.campo_pesquisa:focus{
+   outline: 1px solid #55ACEE;
+}
+
+.btn_pesquisa{
+   border-radius: 0px 5px 5px 0px;
+   border: 1px solid #a6a6a6;
+   font-weight: 500;
+}
+
+.btn_pesquisa:hover{
+   background-color: #3492da;
+   color: #ffffff;
+   transition: 250ms;
+}
+
+
+/* ##################### Destinos ##################### */
+.secao_destinos{
+   margin-top: 5%;
+}
+
+.secao_destinos .container .card:hover{
+   transition: 350ms;
+   box-shadow: 1px 5px 5px #2e2e2e55;
+}
+
+.card{
+   box-shadow: 1px 5px 5px #2e2e2e23;
+}
+
+.card-img{
+   height: 250px;
+   object-fit: cover;
+}
+
+.card-title{
+   font-weight: 700;
+   font-family: 'nunito';
+}
+
+.card-text{
+   color: rgb(27, 27, 27);
+   font-family: 'lato';
+}
+
+.btn.btn-outline-success.btn-sm{
+   font-weight: 600;
+   
+}
+
+.btn.btn-outline-success.btn-sm::before{
+   content: 'R$ ';
+   font-weight: 700;
+   font-size: 18px;
+}
+
+.btn.btn-outline-success.btn-sm::after{
+   content: ',00';
+   font-size: 11px;
+}
+
+/* ##################### Contato ##################### */
+.form-control:focus::-webkit-input-placeholder{
+   color: transparent;
+}
+
+a{
+   text-decoration: none;
+}
+
+.link_contato:hover{
+   text-decoration: underline;
+}
+
+a h6 {
+   color: #000;
+}
+
+/*##################### Promo ##################### */
+.secao-promo{
+   margin-top: 5%;
+}
+
+.titulo_promo{
+   text-align: center;
+}
+
+.secao-promo .container .card{
+   width: 90%;
+   margin: 0 auto;
+   padding: 0;
+   flex-direction: row;
+   display: flex;
+}
+
+.secao-promo .container .card:hover{
+   box-shadow: 1px 5px 5px #2e2e2e55;
+   transition: 350ms;
+}
+
+.conteudo-promo{
+   padding: 1% ;
+}
+
+.img-teste{
+   width: 40%;
+   max-height: 247px;
+   border-radius: 4px 0px 0px 4px;
+   object-fit: cover;
+}
+
+.titulo-promo{
+   font-size: 24px;
+}
+
+.valor{
+   text-align: center;
+}
+
+.txt-valor{
+   color: #4dbe3b;
+   font-weight: 700;
+   font-size: 26px;
+   margin: 0;
+}
+
+.txt-valor::before{
+   content: 'R$';
+   font-size: 14px;
+}
+
+.txt-valor::after{
+   content: ',00';
+   font-size: 13px;
+}
+
+.desconto{
+   text-decoration: line-through;
+   color: #ff0000a1;
+   font-size: 16px;
+   margin: 0;
+}
+
+.tag-preço{
+   width: 11%;
+   height: 21px;
+   font-size: 12px;
+   text-align: center;
+   color: #fff;
+   font-weight: bold;
+   box-shadow: 0px 2px 3px rgba(136, 136, 136, 0.25);
+   background: #4dbe3b;
+   transform: rotate(-45deg);
+   position: absolute;
+   top: 20px;
+   left: -3%;
+}
+
+/* ##################### Modal ##################### */
+
+.modal-img{
+   width: 8%;
+   padding-right: 2%;
+}
+
+.modal .container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   line-height: 2.0em;
+}
+
+.modal .container > div{
+   display: flex;
+   align-items: center;
+}
+
+.txt-modal{
+   margin: 0;
+}
+
+.info-modal{
+   color: #808080;
+   font-family: 'nunito', sans-serif;
+   font-size: 12px;
+   text-align: center;
+   margin-top: 2%;
+}
+
+.info-modal span{
+   font-weight: 600;
+   color: #747474;
+}
+
+.label_data_campo{
+   padding-right: 0.5rem;
+}
+
+.data_campo{
+   height: 25px;
+}
+
+/* ##################### correções em responsividade ##################### */
+@media (max-width:1000px) {
+   .tag-preço{
+      display: none;
+   }
+   
+   .secao-promo .container .card{
+      flex-direction: column;
+   }
+   
+   .img-teste{
+      width: 100%;
+   }
+   
+   .conteudo-promo{
+      width: 100%;
+   }
+   
+   .formulario-contato{
+      order: 1;
+   }
+   
+   .icons-formulario{
+      order: 2;
+   }
+}
