@@ -12,7 +12,7 @@ public class ConnectionMySQL {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		
 		//Conecta com o bd
-		Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/flyaway?user=root&password=Macaconu.1");
+		Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/flyaway?user=root&password=123");
 		return connection;
 	}
 	
